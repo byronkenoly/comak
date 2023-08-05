@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+header #logo-box {
+    width: 5%;
+}
+
+header #logo-box img {
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #00A651;
+}
+
+#hero {
+    background:rgba(0, 0, 0, 0.7) url("../img/osh.jpg");
+    background-blend-mode: darken;
+    height: 84vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    color: #00A651;
+    font-weight: bold;
+}
+
+#services {
+    padding: 0 120px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#services h2 {
+    margin: 30px 0;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services-container .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    min-width: 250px;
+    min-height: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+}
+
+.services-container .service h4 {
+    color: #00A651;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.services-container .service p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.services-container .service:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service .training {
+    color: #00CED1;
+}
+
+.service .audit {
+    color: #0074D9;
+}
+
+.service .helmet {
+    color: #FBC02D;
+}
+
+.service .ext {
+    color: #FF0000;
+}
+
+.service .medical {
+    color: #FF6600;
+}
+
+.service .read-btn {
+    margin-top: 30px;
+    height: 2rem;
+    padding: 0 1.25em;
+    background-color: #00AEEF;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:rgba(0, 0, 0, 0.7) url("../img/contact.jpg");
+    background-blend-mode: darken;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+}
+
+#content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+#content .left-side .details i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.left-side .details .addr {
+    color: #2E86C1;
+}
+
+.left-side .details .mob {
+    color: #0066CC;
+}
+
+.left-side .details .ema {
+    color: #DC3545;
+}
+
+.left-side .details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.left-side .details p {
+    font-size: 14px;
+    color: #fff;
+}
+
+#content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+#content .right-side h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00A651;
+    margin-bottom: 10px;
+}
+
+#content .right-side p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#content .right-side form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side form input,
+.right-side form select,
+.right-side form textarea {
+    color: #000;
+    font-weight: 600;
+    height: 2rem;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0 15px;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    outline: none;
+}
+
+.right-side form textarea {
+    min-height: 110px;
+    padding: 15px;
+}
+
+.right-side button {
+    height: 2rem;
+    width: 20%;
+    font-size: 14px;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #00AEEF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
