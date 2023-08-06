@@ -150,7 +150,7 @@ header #logo-box img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:rgba(0, 0, 0, 0.7) url("../img/contact.jpg");
+    background:rgba(0, 0, 0, 0.8) url("../img/contact.jpg");
     background-blend-mode: darken;
     height: 90vh;
     width: 100%;
@@ -189,6 +189,30 @@ header #logo-box img {
     color: #DC3545;
 }
 
+.left-side .details .user {
+    color: #D4A190 ;
+}
+
+.socials div {
+    margin-top: 10px;
+}
+
+.socials a {
+    cursor: pointer;
+}
+
+.socials .fb {
+    color: #0165E1;
+}
+
+.socials .tw {
+    color: #fff;
+}
+
+.socials .ig {
+    color: #E1306C;
+}
+
 .left-side .details h4 {
     font-size: 18px;
     font-weight: 600;
@@ -213,6 +237,7 @@ header #logo-box img {
 }
 
 #content .right-side p {
+    width: 80%;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
@@ -230,7 +255,7 @@ header #logo-box img {
     color: #000;
     font-weight: 600;
     height: 2rem;
-    width: 100%;
+    width: 80%;
     border: none;
     font-size: 14px;
     margin-bottom: 5px;
@@ -256,4 +281,10 @@ header #logo-box img {
     font-weight: 600;
     border: none;
     cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
 }
