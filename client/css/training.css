@@ -192,3 +192,41 @@ footer p {
     font-weight: 600;
     padding: 20px 0;
 }
+
+.pagenumbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    margin-top: 10px;
+}
+
+.pagenumbers button {
+	width: 25px;
+	height: 25px;
+    border-radius: 14px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: #00AEEF;
+
+	margin: 5px;
+
+	color: #FFF;
+	font-size: 14px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*
+.pagenumbers button:hover {
+	background-color: #44EEAA;
+}*/
+
+.pagenumbers button.active {
+	background-color: #00A651;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
