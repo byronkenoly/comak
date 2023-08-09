@@ -24,7 +24,11 @@
                 <li><a href="#">Documents</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#content">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="close"></i>
             </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </header>
 
@@ -50,7 +54,7 @@
                 </div>
                 <h4>Audit</h4>
                 <p>Discover comprehensive audit services for proactive risk management and compliance.</p>
-                <button class="read-btn">Read More</button>
+                <button class="read-btn"><a href="audit.html">Read More</a></button>
             </div>
             <div class="service" id="ppe">
                 <div class="icon-wrapper">
@@ -58,7 +62,7 @@
                 </div>
                 <h4>Personal Protective Equipment</h4>
                 <p>Explore top-tier PPE solutions for ultimate workplace protection and comfort.</p>
-                <button class="read-btn">Read More</button>
+                <button class="read-btn"><a href="ppe.html">Read More</a></button>
             </div>
             <div class="service" id="fire">
                 <div class="icon-wrapper">
@@ -66,7 +70,7 @@
                 </div>
                 <h4>Fire Equipment & Safety Signage</h4>
                 <p>Amplify safety with cutting-edge fire equipment and essential workplace safety signage solutions.</p>
-                <button class="read-btn">Read More</button>
+                <button class="read-btn"><a href="fire.html">Read More</a></button>
             </div>
             <div class="service" id="first-aid">
                 <div class="icon-wrapper">
@@ -74,7 +78,7 @@
                 </div>
                 <h4>First Aid Kits</h4>
                 <p>Explore comprehensive first aid kits for immediate workplace injury response.</p>
-                <button class="read-btn">Read More</button>
+                <button class="read-btn"><a href="aid.html">Read More</a></button>
             </div>
         </div>
     </section>
@@ -111,19 +115,24 @@
                 <h4>Contact Us</h4>
                 <p>Your Safety is Our Priority. Ready to Take the Next Step?</p>
                 <p>Fill out the form below to get in touch with our dedicated team. Whether you need expert advice, customized solutions or want to explore our comprehensive services, we're just a message away.</p>
-                <form action="https://formsubmit.co/" method="post">
-                    <input type="text" name="name" placeholder="Enter your Name">
-                    <input type="email" name="email" placeholder="Enter your Email">
-                    <input type="text" name="mobile" placeholder="Enter your Mobile number">
-                    <select id="topic">
-                        <option value="">Select Topic</option>
-                        <option value="Training">Training</option>
-                        <option value="Audit">Audit</option>
-                        <option value="PPE">Personal Protective Equipment</option>
-                        <option value="Fire">Fire Equipment & Safety Signage</option>
-                        <option value="First-Aid">First Aid</option>
-                        <option value="General">Any other/General</option>
-                    </select>
+                <form action="https://formsubmit.co/e30b564ef3a64d9551ab4a37e8886de3" method="POST">
+                    <div class="input-row">
+                        <input type="text" name="name" placeholder="Enter your Name" class="marg" required>
+                        <input type="email" name="email" placeholder="Enter your Email" required>
+                        <!--<input type="hidden" name="_captcha" value="false">-->
+                    </div>
+                    <div class="input-row">
+                        <input type="text" name="mobile" placeholder="Enter your Mobile number" class="marg" required>
+                        <select id="topic" name="topicSelected">
+                            <option value="Default" name="">Select Topic</option>
+                            <option value="Training">Training</option>
+                            <option value="Audit">Audit</option>
+                            <option value="PPE">Personal Protective Equipment</option>
+                            <option value="Fire">Fire Equipment & Safety Signage</option>
+                            <option value="First-Aid">First Aid</option>
+                            <option value="General">Any other/General</option>
+                        </select>
+                    </div>
                     <textarea name="message" placeholder="Message..."></textarea>
                     <button type="submit">Send</button>
                 </form>
@@ -136,5 +145,7 @@
             <p>© 2023 22 Software, LLC.</p>
         </div>
     </footer>
+
+    <script src="../js/home.js"></script>
 </body>
 </html>
