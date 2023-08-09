@@ -10,6 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
+    position: sticky;
 }
 
 header #logo-box {
@@ -40,6 +41,11 @@ header #logo-box img {
 
 #navbar li a:hover {
     color: #00A651;
+}
+
+#mobile,
+#close {
+    display: none;
 }
 
 #hero {
@@ -254,13 +260,17 @@ button a {
     flex-direction: column;
 }
 
+.right-side .input-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .right-side form input,
 .right-side form select,
 .right-side form textarea {
     color: #000;
     font-weight: 600;
     height: 2rem;
-    width: 80%;
     border: none;
     font-size: 14px;
     margin-bottom: 5px;
@@ -270,6 +280,18 @@ button a {
     outline: none;
 }
 
+.right-side form textarea {
+    width: 80%;
+}
+
+.right-side form input,
+.right-side form select {
+    width: 39%;
+}
+
+.right-side form .marg {
+    margin-right: 2%;
+}
 .right-side form textarea {
     min-height: 110px;
     padding: 15px;
@@ -292,4 +314,101 @@ footer {
     text-align: center;
     font-weight: 600;
     padding: 20px 0;
+}
+
+/* MEDIA QUERIES ************************/
+@media (max-width: 799px){
+    header {
+        padding: 10px 40px;
+    }
+
+    header #logo-box {
+        width: 10%;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 240px;
+        background-color: #F0F0F0;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.activo {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+    #mobile i {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #hero {
+        padding: 0 40px;
+    }
+
+    #content {
+        padding: 0 35px;
+        flex-direction: column-reverse;
+    }
+
+    #content .left-side {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #content .right-side {
+        width: 100%;
+    }
+
+    #content .left-side .details i {
+        font-size: 16px;
+    }
+
+    .socials div {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 777px){
+    #services {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 650px){
+    #content {
+        padding: 20px 10px;
+    }
+
+    #content .left-side .details {
+        margin: 4px;
+        text-align: center;
+    }
 }
