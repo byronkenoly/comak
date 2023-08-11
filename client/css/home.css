@@ -49,7 +49,7 @@ header #logo-box img {
 }
 
 #hero {
-    background:rgba(0, 0, 0, 0.7) url("../img/osh.jpg");
+    background:rgba(0, 0, 0, 0.7) url("/client_img/osh.jpg");
     background-blend-mode: darken;
     height: 84vh;
     width: 100%;
@@ -160,7 +160,7 @@ button a {
 #form-section {
     min-height: 100vh;
     width: 100%;
-    background:rgba(0, 0, 0, 0.8) url("../img/contact.jpg");
+    background:rgba(0, 0, 0, 0.8) url("/client_img/contact.jpg");
     background-blend-mode: darken;
     background-size: cover;
     display: flex;

@@ -17,43 +17,43 @@ if (close){
 const slider = document.querySelector('.slider');
 const logosObject = [
     {
-        "img": "../img/partners/african_cotton.png",
+        "img": "/client_img/partners/african_cotton.png",
         "name": "African Cotton"
     },
     {
-        "img": "../img/partners/bericap.png",
+        "img": "/client_img/partners/bericap.png",
         "name": "bericap"
     },
     {
-        "img": "../img/partners/brazafric_enterprise.png",
+        "img": "/client_img/partners/brazafric_enterprise.png",
         "name": "Brazafric Enterprise"
     },
     {
-        "img": "../img/partners/brazafric_industries.png",
+        "img": "/client_img/partners/brazafric_industries.png",
         "name": "Brazafric Industries"
     },
     {
-        "img": "../img/partners/bwosi.png",
+        "img": "/client_img/partners/bwosi.png",
         "name": "Bwosi"
     },
     {
-        "img": "../img/partners/fossilcote.png",
+        "img": "/client_img/partners/fossilcote.png",
         "name": "FossilCote"
     },
     {
-        "img": "../img/partners/ric.png",
+        "img": "/client_img/partners/ric.png",
         "name": "Ric"
     },
     {
-        "img": "../img/partners/riggen_fresh.png",
+        "img": "/client_img/partners/riggen_fresh.png",
         "name": "Riggen Fresh"
     },
     {
-        "img": "../img/partners/seweco.png",
+        "img": "/client_img/partners/seweco.png",
         "name": "Seweco"
     },
     {
-        "img": "../img/partners/tecno.png",
+        "img": "/client_img/partners/tecno.png",
         "name": "Tecno"
     },
 ];
@@ -74,7 +74,7 @@ window.addEventListener("load", initializeSlider());
 
 const tinySlider = tns({
     container: ".slider",
-    autoplay: true,
+    center: true,
     autoplayButtonOutput: false,
     autoWidth: true,
     gutter: 15,
