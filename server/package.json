@@ -2,7 +2,7 @@
   "name": "comak",
   "version": "1.0.0",
   "description": "occupational safety & health",
-  "main": "app.js",
+  "main": "comak.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
