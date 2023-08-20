@@ -1,3 +1,15 @@
+:root {
+    --size-link: 20px;
+    --size-link-small: 16px;
+    --size-p: 20px;
+    --size-p2: 16px;
+    --size-p3: 18px;
+    --size-h2: 30px;
+    --size-h3: 24px;
+    --size-h4: 20px;
+    --contact: 24px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +23,7 @@ header {
     justify-content: space-between;
     padding: 20px 80px;
     position: sticky;
+    z-index: 2;
 }
 
 header #logo-box {
@@ -35,7 +48,8 @@ header #logo-box img {
 #navbar li a {
     text-decoration: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: var(--size-link);
     transition: 0.3s ease;
 }
 
@@ -63,13 +77,15 @@ header #logo-box img {
 
 #hero h2 {
     color: #fff;
-    font-size: 24px;
+    font-size: var(--size-h2);
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
 #hero p {
     color: #00A651;
-    font-weight: bold;
+    font-size: var(--size-p);
+    font-weight: 300;
 }
 
 #services {
@@ -80,12 +96,15 @@ header #logo-box img {
 
 #services h2 {
     margin: 30px 0;
+    font-weight: 400;
+    font-size: var(--size-h2);
 }
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 40px;
 }
 
 .services-container .service {
@@ -105,13 +124,14 @@ header #logo-box img {
 
 .services-container .service h4 {
     color: #00A651;
-    font-weight: 600;
+    font-size: var(--size-h4);
+    font-weight: 400;
     margin: 1em 0;
 }
 
 .services-container .service p {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: var(--size-p2);
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -193,6 +213,11 @@ button a {
     text-align: center;
 }
 
+.left-side .details div {
+    display: flex;
+    gap: 20px;
+}
+
 .form-content .left-side .details i {
     font-size: 20px;
     margin-bottom: 10px;
@@ -235,13 +260,14 @@ button a {
 }
 
 .left-side .details h4 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: var(--size-p3);
+    font-weight: 500;
     color: #fff;
 }
 
 .left-side .details p {
-    font-size: 14px;
+    font-size: var(--size-p2);
+    font-weight: 300;
     color: #fff;
 }
 
@@ -251,16 +277,16 @@ button a {
 }
 
 .form-content .right-side h4 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: var(--size-h2);
+    font-weight: 400;
     color: #00A651;
     margin-bottom: 10px;
 }
 
 .form-content .right-side p {
     width: 80%;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: var(--size-p3);
+    font-weight: 300;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -283,10 +309,10 @@ button a {
 .right-side form select,
 .right-side form textarea {
     color: #000;
-    font-weight: 600;
-    height: 2rem;
+    font-weight: 300;
+    height: 2.5rem;
     border: none;
-    font-size: 14px;
+    font-size: var(--size-p2);
     margin-bottom: 5px;
     padding: 0 15px;
     background-color: #F5F5F5;
@@ -314,19 +340,20 @@ button a {
 .right-side button {
     height: 2rem;
     width: 20%;
-    font-size: 14px;
+    font-size: var(--size-p2);
     padding: 0 15px;
     border-radius: 4px;
     color: #fff;
     background-color: #00AEEF;
-    font-weight: 600;
+    font-weight: 400;
     border: none;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
-    font-weight: 600;
+    font-size: var(--size-p3);
+    font-weight: 500;
     padding: 20px 0;
 }
 
@@ -414,8 +441,38 @@ footer {
 }
 
 @media (max-width: 777px){
+    #navbar li a {
+        font-size: var(--size-link-small);
+    }
+
+    #hero h2 {
+        font-size: var(--contact);
+    }
+
+    #hero p {
+        font-size: var(--size-p2);
+    }
+
+    .services-container {
+        gap: 20px;
+    }
+
     #services {
         padding: 0 60px;
+    }
+
+    #services h2 {
+        font-size: var(--contact);
+    }
+
+    .form-content .right-side p {
+        font-size: var(--size-p2);
+    }
+
+    .right-side form input,
+    .right-side form select,
+    .right-side form textarea {
+        font-size: 14px;
     }
 }
 

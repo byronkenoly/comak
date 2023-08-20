@@ -5,7 +5,8 @@
 .items h3 {
     text-align: center;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: var(--size-h2);
+    font-weight: 400;
 }
 
 .fire-container {
@@ -39,12 +40,13 @@
 .fire-container .fire-equip h5 {
     padding-top: 8px;
     color: #000;
-    font-size: 14px;
+    font-size: var(--size-p2);
+    font-weight: 400;
 }
 
 .fire-container .fire-equip h4 {
     padding-top: 8px;
-    font-size: 14px;
+    font-size: var(--size-p2);
     font-weight: 600;
     color: #00A651;
 }

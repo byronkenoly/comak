@@ -33,12 +33,12 @@ header #logo-box img {
     padding: 0 20px;
 }
 
-#navbar li a {
+/* #navbar li a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
     transition: 0.3s ease;
-}
+} */
 
 #navbar li a:hover {
     color: #00A651;
@@ -48,6 +48,11 @@ header #logo-box img {
     padding: 0 120px;
 }
 
+.brief h2 {
+    font-size: var(--size-h2);
+    font-weight: 500;
+}
+
 .brief h2,
 .brief h3 {
     color: #00A651;
@@ -55,11 +60,14 @@ header #logo-box img {
 }
 
 .brief h3 {
+    font-size: var(--size-h3);
+    font-weight: 500;
     margin: 20px 0;
 }
 
 .brief p {
-    font-size: 14px;
+    font-size: var(--size-p3);
+    font-weight: 300;
     margin: 15px 0;
     text-align: justify;
 }
@@ -80,8 +88,8 @@ header #logo-box img {
 .accordion_label {
     display: block;
     color: #fff;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: var(--size-p3);
+    font-weight: 500;
     cursor: pointer;
     position: relative;
     transition: background 0.1s;
@@ -131,10 +139,21 @@ header #logo-box img {
     display: none;
 }
 
+.accordion_content strong {
+    font-size: var(--size-p);
+    font-weight: 500;
+}
+
 .accordion_content ul,
 .accordion_content ol {
     margin-left: 20px;
     margin-bottom: 15px;
+}
+
+.accordion_content ul li,
+.accordion_content ol li {
+    font-size: var(--size-p3);
+    font-weight: 300;
 }
 
 footer {
@@ -155,13 +174,15 @@ footer p {
 }
 
 .bottom-footer h4 {
-    font-size: 18px;
+    font-size: var(--size-h3);
+    font-weight: 400;
     color: #000;
     margin-bottom: 10px;
 }
 
 .bottom-footer p {
-    font-size: 14px;
+    font-size: var(--size-p2);
+    font-weight: 300;
     color: #F0F0F0;
     margin: 0 0 8px 0;
 }
@@ -174,7 +195,8 @@ footer p {
 }
 
 .bottom-footer a {
-    font-size: 14px;
+    font-size: var(--size-p2);
+    font-weight: 300;
     text-decoration: none;
     color: #F0F0F0;
     margin-bottom: 10px;
@@ -200,7 +222,8 @@ footer p {
 
 .copyright {
     text-align: center;
-    font-weight: 600;
+    font-size: var(--size-p3);
+    font-weight: 500;
     padding: 20px 0;
 }
 
@@ -240,4 +263,16 @@ footer p {
 .pagenumbers button.active {
 	background-color: #00A651;
 	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 777px){
+    .brief h2 {
+        font-size: var(--size-h3);
+        margin-top: 16px;
+    }
+
+    .accordion_label {
+        font-size: var(--size-p2);
+        font-weight: 400;
+    }
 }
