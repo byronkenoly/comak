@@ -1,5 +1,5 @@
 :root {
-    --size-link: 20px;
+    --size-link: 18px;
     --size-link-small: 16px;
     --size-p: 20px;
     --size-p2: 16px;
@@ -352,8 +352,8 @@ button a {
 
 footer {
     text-align: center;
-    font-size: var(--size-p3);
-    font-weight: 500;
+    font-size: var(--size-p2);
+    font-weight: 400;
     padding: 20px 0;
 }
 

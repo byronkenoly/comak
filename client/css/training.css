@@ -222,8 +222,8 @@ footer p {
 
 .copyright {
     text-align: center;
-    font-size: var(--size-p3);
-    font-weight: 500;
+    font-size: var(--size-p2);
+    font-weight: 400;
     padding: 20px 0;
 }
 
@@ -269,6 +269,14 @@ footer p {
     .brief h2 {
         font-size: var(--size-h3);
         margin-top: 16px;
+    }
+
+    .accordion_content strong {
+        font-size: var(--size-p3);
+    }
+
+    .brief p {
+        font-size: var(--size-p2);
     }
 
     .accordion_label {
