@@ -41,6 +41,10 @@ app.get('/aid', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/html/aid.html'));
 });
 
+app.get('/documents', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/html/documents.html'));
+});
+
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
